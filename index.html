@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="background-animation"></div>
+  
+  <div class="container">
+    <div class="header">
+      <i class="fab fa-github"></i>
+      <h1>GitHub Profile Finder</h1>
+      <p>Discover amazing developers on GitHub</p>
+    </div>
+
+    <div class="search-container">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+         <input type="text" id="username" placeholder="Enter GitHub username" required>
+        <button onclick="getProfile()" id="searchBtn">
+          <span class="btn-text">Search</span>
+          <div class="loader hidden"></div>
+        </button>
+      </div>
+    </div>
+
+    <div id="profile" class="profile-card hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
